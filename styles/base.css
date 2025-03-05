@@ -11,6 +11,10 @@ header {
     padding: 20px;
 }
 
+main {
+    max-width: none !important;
+}
+
 .navigation {
     list-style: none;
     display: flex;
@@ -19,6 +23,11 @@ header {
     align-items: center;
     justify-content: space-evenly;
     padding: 0;
+}
+
+.navigation a:hover {
+    color: inherit;
+    background-color: transparent;
 }
 
 .navigation li {
