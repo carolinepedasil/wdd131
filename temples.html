@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="temples.css">
+    <link rel="stylesheet" href="temples-large.css" media="(min-width: 768px)">
+    <script defer src="temples.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Temple Album</h1>
+            <nav id="nav-menu">
+                <a href="#">Home</a>
+                <a href="#">Old</a>
+                <a href="#">New</a>
+                <a href="#">Large</a>
+                <a href="#">Small</a>
+            </nav>
+            <button id="menu-toggle">☰</button>
+        </div>
+    </header>    
+    <main>
+        <h2>Home</h2>
+        <section class="gallery">
+    <script>
+        for (let i = 0; i < 9; i++) {
+            document.write(`
+                <figure>
+                    <img src='sao_paulo_temple.webp' alt='São Paulo Temple'>
+                    <figcaption>São Paulo</figcaption>
+                </figure>
+            `);
+        }
+    </script>
+</section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> &#10048; Rubia Magdalena Francesco &#10048; Madagascar</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('last-modified').textContent = document.lastModified;
+
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+</body>
+</html>
