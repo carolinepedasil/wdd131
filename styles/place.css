@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #009b3a;
+    --secondary-color: #ffdf00;
+    --text-color: #000;
+    --bg-color: #fff;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+  
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+  
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+  
+picture img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+  
+.data, .weather {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 400px;
+    background-color: #f9f9f9;
+}
+  
+.weather h2::after {
+    content: "\26C5"; /* ⛅ */
+    margin-left: 0.5rem;
+}
+  
+.weather-icon {
+    width: 50px;
+    display: block;
+    margin: 0.5rem auto;
+}
+  
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: #000;
+}
+  
+@media (min-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    picture {
+      position: relative;
+    }
+  
+    .data {
+      position: absolute;
+      top: 150px;
+      left: 30px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  
+    .weather {
+      position: absolute;
+      top: 150px;
+      right: 30px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  
+    picture img {
+      max-height: 500px;
+      object-fit: cover;
+    }
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .info-box {
+    position: absolute;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px solid var(--primary-color);
+  }
+  
+  .data {
+    top: 20%;
+    left: 5%;
+  }
+  
+  .weather {
+    top: 20%;
+    right: 5%;
+  }
+  
+  .weather h2::after {
+    content: \"\\26C5\"; /* ⛅ */
+    margin-left: 0.5rem;
+  }
+  
+  
+  
