@@ -5,6 +5,10 @@ body {
     text-align: center;
 }
 
+h1, h2, h3, p, nav, button, figcaption, a {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     background-color: #4A0072;
     color: white;
