@@ -174,3 +174,80 @@ footer {
 .yellow-text {
     color: yellow;
 }
+
+form {
+    background-color: #f4f4f4;
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  form label,
+  form legend {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="date"],
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+  }
+  
+  form fieldset {
+    border: none;
+    margin: 1.2rem 0;
+    padding: 0;
+  }
+  
+  form input[type="radio"],
+  form input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  .star-label {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    display: inline-block;
+  }
+  
+  form textarea {
+    min-height: 100px;
+  }
+  
+  form input[type="submit"] {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #1D4265;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #16334f;
+  }
+  
+  @media screen and (min-width: 600px) {
+    form {
+      max-width: 500px;
+    }
+  }
+  
